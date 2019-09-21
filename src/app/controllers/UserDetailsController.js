@@ -1,7 +1,5 @@
 import axios from 'axios';
 
 module.exports = {
-  async index(req, res) {
-
-  }
-}
+  async index(req, res) {},
+};

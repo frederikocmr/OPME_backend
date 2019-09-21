@@ -13,4 +13,4 @@ routes.post(`${commonUrl}/:username/details`, UserDetailsController.index);
 
 routes.post(`${commonUrl}/:username/repos`, UserRepositoriesController.index);
 
-export default routes; 
+export default routes;
