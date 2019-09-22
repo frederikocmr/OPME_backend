@@ -5,6 +5,12 @@ module.exports = {
   async index(req, res) {
     const { since } = req.query;
 
+    if (!since) {
+      return res
+        .status(400)
+        .json({ error: 'Parâmetros inválidos na requisição!' });
+    }
+
     try {
       const { data, headers } = await axios.get(
         `https://api.github.com/users?since=${since}`
