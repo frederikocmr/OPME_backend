@@ -18,7 +18,7 @@ module.exports = {
       const response = {
         id: data.id,
         login: data.login,
-        profile_url: data.url,
+        profile_url: data.html_url,
         avatar_url: data.avatar_url,
         login_creation: data.created_at,
       };

@@ -18,7 +18,7 @@ module.exports = {
       const response = data.map(repo => ({
         id: repo.id,
         name: repo.name,
-        url: repo.url,
+        url: repo.html_url,
       }));
 
       return res.json(response);
